@@ -1,0 +1,12 @@
+:root {
+    --text-font: 'Inter', Helvetica, sans-serif;
+    --mono-font: 'Jetbrains Mono', 'Source Code Pro', monospace;
+    --background: #000;
+    --foreground: #fff;
+}
+
+body {
+    font-family: var(--text-font);
+    background-color: var(--background);
+    color: var(--foreground);
+}
