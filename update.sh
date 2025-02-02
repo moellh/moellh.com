@@ -8,7 +8,7 @@ if ! git diff --quiet origin/main; then
   git pull origin main
   echo "Update up to commit with string: $(git log -1 --pretty=format:"%h %s")"
 
-  journalctl -u moellh.com.service > $HOME/dev/moellh.com/website/journalctl.log
+  journalctl -u moellh-com-update.service > $HOME/dev/moellh.com/website/journalctl.log
 
   SERVER_DIR=/var/www/html
   rsync -av --delete website/ "$SERVER_DIR"
