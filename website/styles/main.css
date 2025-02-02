@@ -47,17 +47,19 @@ table {
 /* }}} --------------------------------------------- end of Reset Browser CSS */
 
 :root {
-    --text-font: 'Inter', Helvetica, sans-serif;
-    --mono-font: 'Jetbrains Mono', 'Source Code Pro', monospace;
-    --background: #000000;
-    --foreground: #FFFFFF;
-    --highlight: #477FFB;
+	--text-font: 'Inter', Helvetica, sans-serif;
+	--mono-font: 'Jetbrains Mono', 'Source Code Pro', monospace;
+	--background: #000000;
+	--foreground: #FFFFFF;
+	--highlight: #6699FF;
+	--dark-highlight: #477FFB;
 }
 
-body {
-    font-family: var(--text-font);
-    background-color: var(--background);
-    color: var(--foreground);
+html, body {
+	height: 100%;
+	font-family: var(--text-font);
+	background-color: var(--background);
+	color: var(--foreground);
 }
 
 h1, h2, h3, h4, h5, h6 {
