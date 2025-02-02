@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs moellh-com-update.service every 15 minutes
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=15min
+Unit=moellh-com-update.service
+
+[Install]
+WantedBy=timers.target

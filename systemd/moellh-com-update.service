@@ -1,0 +1,13 @@
+[Unit]
+Description=Auto fetch moellh.com from GitHub and reinstall
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/moellh/dev/moellh.com/update.sh
+WorkingDirectory=/home/moellh/dev/moellh.com
+User=moellh
+Group=moellh
+
+[Install]
+WantedBy=multi-user.target
