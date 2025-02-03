@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/home/moellh/dev/moellh.com/update.sh
+ExecStart=/bin/bash /home/moellh/dev/moellh.com/update.sh
 WorkingDirectory=/home/moellh/dev/moellh.com
 User=moellh
 Group=moellh
