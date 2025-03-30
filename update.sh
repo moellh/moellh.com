@@ -8,7 +8,7 @@ if ! git diff --quiet origin/main; then
   echo "Update up to commit: $(git log -1 --pretty=format:"%h %s")"
 fi
 
-./mensakrabbler/update.sh
+cd ./mensakrabbler/; ./update.sh; cd ..
 cp ./mensakrabbler/website/index.html ./website/mensakrabbler/index.html
 
 journalctl -u moellh-com-update.service > ./website/journalctl.log
