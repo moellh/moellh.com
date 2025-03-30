@@ -10,6 +10,7 @@ fi
 
 cd ./mensakrabbler/; ./update.sh; cd ..
 cp ./mensakrabbler/website/index.html ./website/mensakrabbler/index.html
+rsync -av --delete ./mensakrabbler/website/ ./website/mensakrabbler/
 
 journalctl -u moellh-com-update.service > ./website/journalctl.log
 
