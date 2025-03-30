@@ -12,7 +12,7 @@ cd ./mensakrabbler/; ./update.sh; cd ..
 cp ./mensakrabbler/website/index.html ./website/mensakrabbler/index.html
 rsync -av --delete ./mensakrabbler/website/ ./website/mensakrabbler/
 
-journalctl -u moellh-com-update.service > ./website/journalctl.log
+journalctl --since "1 week ago" -u moellh-com-update.service > ./website/journalctl.log
 
 SERVER_DIR=/var/www/html
 rsync -av --delete website/ "$SERVER_DIR"
