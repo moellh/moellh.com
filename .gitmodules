@@ -1,0 +1,3 @@
+[submodule "mensakrabbler"]
+	path = mensakrabbler
+	url = https://github.com/moellh/mensakrabbler.git
