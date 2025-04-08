@@ -8,6 +8,7 @@ ExecStart=/bin/bash /home/moellh/dev/moellh.com/update.sh
 WorkingDirectory=/home/moellh/dev/moellh.com
 User=moellh
 Group=moellh
+TimeoutStartSec=1min
 
 [Install]
 WantedBy=multi-user.target
